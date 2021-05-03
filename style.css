@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro&display=swap');
 
-.light-mode {
-    --bg: #f0f0f0;
-    --fg: #191919;
-    --card-bg: rgba(0, 0, 0, .05);
-    --card-fg: #191919;
-    --secondary-bg: #202124;
+.theme-light {
+    --bg: #fafafa;
+    --fg: #2d4a3d;
+    --card-bg: #eeeeee;
+    --secondary-bg: #333E38;
     --secondary-fg: #bfc2ca;
+    --footer-bg: #202124;
+    --green-overlay: rgba(38, 44, 42, 95%);
+
+}
+
+.theme-dark {
+    --bg: #202124;
+    --fg: #c7c7c7;
+    --card-bg: #2B2C31;
+    --secondary-bg: #2B2C31;
+    --secondary-fg: #bfc2ca;
+    --footer-bg: #131515;
+    --green-overlay: rgba(34, 35, 41, 95%);
+
 }
 
 /* general */
@@ -17,7 +30,7 @@ a {
 
 body {
     --accent: #9FA916;
-    --accent-alt: #6f8f25;
+    --accent-alt: #6c8d1e;
     --footer-height: 48px;
     --header-font: 'Poppins', sans-serif;
     --text-font: 'Source Sans Pro', sans-serif;
@@ -32,6 +45,8 @@ main {
 }
 
 body {
+    margin:0;
+    transition: .65s ease;
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -58,9 +73,19 @@ footer {
     align-items: center;
     color: var(--secondary-fg);
     justify-content: space-between;
-    background: var(--secondary-bg);
+    background: var(--footer-bg);
     border-top: 6px solid var(--accent-alt);
 }
+
+.footer-leftmost {
+    display: flex;
+    flex-direction: row;
+}
+
+.theme-switch-container {
+    margin-right: 20px;
+}
+
 
 .lang {
     margin-right: 6px;
@@ -68,6 +93,10 @@ footer {
 
 p.sig {
     color: var(--secondary-fg);
+}
+
+.header-container{
+    background: url("placeholder.png");
 }
 
 /* fontawesome */
@@ -86,6 +115,10 @@ i.fas.fa-chevron-down {
     justify-content: center;
 }
 
+a#theme-icon:hover {
+    color: var(--accent-alt);
+}
+
 /* header and navbar */
 
 nav {
@@ -97,7 +130,6 @@ nav {
 }
 
 header {
-    border-radius: 16px;
     background: var(--secondary-bg);
     padding: 40px 0;
     display: flex;
@@ -155,8 +187,14 @@ li a:active {
     background-color: var(--secondary-fg);
 }
 
+.welcome-wrapper{
+    height: 50vh;
+    background: var(--green-overlay)
+}
+
 .welcome-section {
-    height: 55vh;
+    margin: 0;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +239,7 @@ content {
 
 .main-title {
     color: var(--accent);
-    font-size: 32px;
+    font-size: 48px;
     margin: 0;
     padding-top: 32px;
 }
@@ -226,8 +264,16 @@ content {
     flex: 4;
 }
 
+.smaller-image{
+    flex: 2;
+}
+
 .paragraph-container {
     flex: 5;
+}
+
+.left-content .paragraph-container {
+    text-align: right;
 }
 
 .side-image {
@@ -238,7 +284,7 @@ content {
 }
 
 .paragraph {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* card layout */
@@ -256,13 +302,29 @@ content {
     flex-direction: row-reverse;
 }
 
-/* welcome background */
-.section.welcome-section {
-    width: 100vw;
-    position: relative;
-    margin-left: -50vw;
-    left: 50%;
+/* contact section */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+.management{
+    display: flex;
+    flex-direction: row;
 }
 
+.profile-card{
+    background: black;
+    margin-right: 16px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-header{
+    font-size: 24px;
+    color: var(--accent-alt);
+    margin: 0;
+}
+
+/* shadows */
 /*animations*/
 /* screen size compa */
