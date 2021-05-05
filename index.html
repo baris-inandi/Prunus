@@ -2,6 +2,7 @@
 <html lang="tr">
 
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="index.js"></script>
@@ -12,138 +13,148 @@
 </head>
 
 <body>
+    <div id="site-wrapper">
+        <div class="header-container noselect">
+            <header>
+                <div class="full-width">
+                    <nav class="header-font">
+                        <img draggable="false" src="./src/logo-small.png" class="small-logo">
+                        <ul class="nav">
+                            <li><a onclick="goToByScroll('about')">BİZ KİMİZ</a></li>
+                            <li><a onclick="goToByScroll('request')">İSTEYİN ÜRETELİM</a></li>
+                            <li><a onclick="goToByScroll('contact')">İLETİŞİM</a></li>
+                        </ul>
+                    </nav>
 
+                </div>
 
-    <div class="header-container">
-        <header>
-            <div>
-                <nav class="header-font">
-                    <img src="./src/logo-small.png" class="small-logo">
-                    <ul class="nav">
-                        <li><a onclick="goToByScroll('about')">BİZ KİMİZ</a></li>
-                        <li><a onclick="goToByScroll('request')">İSTEYİN ÜRETELİM</a></li>
-                        <li><a onclick="goToByScroll('contact')">İLETİŞİM</a></li>
-                    </ul>
-                </nav>
+            </header>
 
-            </div>
-
-        </header>
-
-        <div class="welcome-wrapper">
-            <div class="welcome-section ">
-                <logo class="main-page-logo">
-                    <img src="./src/logo-large.png" class="large-logo">
-                </logo>
-                <p class="welcome header-font">PRUNUS'A HOŞGELDİNİZ</p>
-                <i class="fas fa-chevron-down"></i>
+            <div class="welcome-wrapper">
+                <div class="welcome-section ">
+                    <logo class="main-page-logo">
+                        <img draggable="false" src="./src/logo-large.png" class="large-logo">
+                    </logo>
+                    <p class="welcome header-font">PRUNUS'A HOŞGELDİNİZ</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
         </div>
-    </div>
 
-    <main>
-        <content>
-            <div class="cards">
-                <div class="card section right-align-section" id="about">
-                    <div class="section-bottom right-content">
-                        <div class="side-image-container">
-                            <img class="side-image" src="placeholder.png">
-                        </div>
-
-                        <div class="paragraph-container">
-                            <p class="header-font main-title">BİZ KİMİZ?</p>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem, interdum
-                                a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus vitae
-                                nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
-                                Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
-                                eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus sed.
-                                Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
-                                Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur est
-                                sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
-                                pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit viverra.
-                                Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie. Pellentesque
-                                sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
-                                vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
-                            </p>
-                        </div>
+        <main>
+            <content>
+                <div class="cards">
+                    <div class="mobile sticky-top">
+                        <img draggable="false" src="./src/sticky.png" class="sticky-logo">
                     </div>
-                </div>
-                <div class="card section left-align-section" id="request">
-                    <div class="section-bottom left-content">
-                        <div class="side-image-container">
-                            <img class="side-image" src="placeholder.png">
-                        </div>
+                    <div class="card section" id="about">
+                        <div class="section-bottom right-content">
+                            <div class="side-image-container">
+                                <img draggable="false" class="side-image" src="placeholder.png">
+                            </div>
 
-                        <div class="paragraph-container">
-                            <p class="header-font main-title">İSTEYİN, ÜRETELİM</p>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem, interdum
-                                a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus vitae
-                                nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
-                                Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
-                                eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus sed.
-                                Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
-                                Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur est
-                                sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
-                                pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit viverra.
-                                Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie. Pellentesque
-                                sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
-                                vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card section right-align-section" id="contact">
-                    <div class="section-bottom right-content">
-                        <div class="side-image-container smaller-image">
-                            <img class="side-image" src="placeholder.png">
-                        </div>
-
-                        <div class="paragraph-container">
-                            <p class="header-font main-title">İLETİŞİM</p>
-                            <div class="contact-container">
-                                <div class="management">
-                                    <div class="profile-card">
-                                        <p class="profile-header header-font">Burak Gürdal</p>
-                                        <p class="phone-number">+90 532 411 5961</p>
-                                    </div>
-                                    <div class="profile-card">
-                                        <p class="profile-header header-font">Tayfun Erpek</p>
-                                        <p class="phone-number">+90 532 514 0035</p>
-                                    </div>
-                                </div>
-                                <div class="hq">
-
-                                </div>
+                            <div class="paragraph-container">
+                                <p class="header-font main-title noselect">BİZ KİMİZ?</p>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
+                                    interdum
+                                    a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
+                                    vitae
+                                    nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
+                                    Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
+                                    eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
+                                    sed.
+                                    Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
+                                    Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
+                                    est
+                                    sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
+                                    pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit
+                                    viverra.
+                                    Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie.
+                                    Pellentesque
+                                    sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
+                                    vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
+                                </p>
                             </div>
                         </div>
                     </div>
+                    <div class="card section" id="request">
+                        <div class="section-bottom left-content">
+                            <div class="side-image-container">
+                                <img draggable="false" class="side-image" src="placeholder.png">
+                            </div>
+
+                            <div class="paragraph-container">
+                                <p class="header-font main-title noselect">İSTEYİN, ÜRETELİM</p>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
+                                    interdum
+                                    a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
+                                    vitae
+                                    nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
+                                    Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
+                                    eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
+                                    sed.
+                                    Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
+                                    Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
+                                    est
+                                    sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
+                                    pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit
+                                    viverra.
+                                    Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie.
+                                    Pellentesque
+                                    sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
+                                    vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card section" id="contact">
+                        <div class="profile-card">
+                            <p class="profile-header header-font">Burak Gürdal</p>
+                            <div class="profile-details">
+                                <a href="tel:+905324115961" class="phone-number"><i class="fas fa-phone"></i>+90 532 411
+                                    5961</a>
+                                <a href="mailto:burak.gurdal@prunus.com.tr" class="mail-adress"><i
+                                        class="fas fa-envelope"></i>burak.gurdal@prunus.com.tr</a>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <p class="profile-header header-font">Tayfun Erpek</p>
+
+                            <div class="profile-details">
+                                <a href="tel:+905325140035" class="phone-number"><i class="fas fa-phone"></i>+90 532 514
+                                    0035</a>
+                                <a href="mailto:tayfun.erpek@prunus.com.tr" class="mail-adress"><i
+                                        class="fas fa-envelope"></i>tayfun.erpek@prunus.com.tr</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </content>
+        </main>
+        <footer class="noselect">
+            <div class="footer-leftmost">
+                <div class="theme-switch-container">
+                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
                 </div>
+                <div class="lang-select">
+                    <a class="lang" href="#">TR</a>
+                    <a class="lang" href="#">ENG</a>
+                </div>
+
             </div>
 
 
-        </content>
-    </main>
-    <footer>
-        <div class="footer-leftmost">
-            <div class="theme-switch-container">
-                <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
-            </div>
-            <div class="lang-select">
-                <a class="lang" href="#">TR</a>
-                <a class="lang" href="#">ENG</a>
-            </div>
+            <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021 | Websitesi: <a target="_blank"
+                    rel="noopener noreferrer" href="https://github.com/baris-inandi/">@baris-inandi</a></p>
 
-        </div>
+            <img draggable="false" src="./src/icon.png" class="icon">
+        </footer>
 
 
-        <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021 | Websitesi: <a target="_blank"
-                rel="noopener noreferrer" href="https://github.com/baris-inandi/">@baris-inandi</a></p>
-
-        <img src="./src/icon.png" class="icon">
-    </footer>
-
+    </div>
 </body>
 
 </html>
