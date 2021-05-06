@@ -8,12 +8,12 @@
     --secondary-fg: #bfc2ca;
     --footer-bg: #202124;
     --green-overlay: rgb(37 44 43 / 92%);
-    --mobile-overlay: linear-gradient(0deg, var(--bg) 0%, rgb(245 255 225 / 90%) 80%);
+    --mobile-overlay: linear-gradient(0deg, rgb(69 80 78 / 92%) 0%, rgb(34 45 39 / 92%) 80%);
     --contrasting-color: rgba(0, 0, 0, .033);
-    --banner-shadow: inset 0px 16px 17px -20px rgb(29, 36, 31), inset 0px -16px 17px -20px rgb(29, 36, 31);
+    --banner-shadow: inset 0px 16px 17px -20px rgb(29, 36, 31);
     --sticky-shadow: 0px 13px 12px -3px rgb(0 0 0 / 7%);
     --card-shadow: 0px 4px 26px -5px #c5c6c7;
-    --subtle-shadow: 0px 0px 18px -8px #0b150b;
+    --subtle-shadow: 0px 0px 18px -10px #0b150b;
 
 }
 
@@ -25,9 +25,9 @@
     --secondary-fg: #bfc2ca;
     --footer-bg: #141616;
     --green-overlay: rgb(36 37 42 / 95%);
-    --mobile-overlay: linear-gradient(0deg, var(--bg) 0%, rgb(27 51 57 / 90%) 220%);
+    --mobile-overlay: linear-gradient(0deg, var(--bg) 0%, rgb(22 38 43 / 90%) 250%);
     --contrasting-color: rgba(255, 255, 255, .033);
-    --banner-shadow: inset 0px 16px 17px -20px rgb(22 22 24 / 80%), inset 0px -16px 17px -20px rgb(22 22 24 / 80%);
+    --banner-shadow: inset 0px 16px 40px -20px rgb(21 19 20 / 100%);
     --sticky-shadow: 0px 13px 12px -3px #1b1b1d;
     --card-shadow: 0px 4px 24px -6px #1b1b1d;
     --subtle-shadow: 0px 0px 20px -10px #101011;
@@ -137,7 +137,7 @@ p.sig {
 }
 
 .header-container {
-    background: url(placeholder.png);
+    background: url(./img/banner.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -215,8 +215,12 @@ header {
     filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, .2));
 }
 
-.cards .header-font {
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, .2));
+.theme-dark .cards .header-font {
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, .16));
+}
+
+.theme-light .cards .header-font {
+    filter: drop-shadow(0px 5px 3px rgba(50, 80, 20, .1));
 }
 
 ul {
@@ -335,6 +339,12 @@ content {
     flex: 4;
 }
 
+.paragraph {
+    transition-delay: .5s !important;
+    transition: all .1s !important;
+
+}
+
 .paragraph-container {
     flex: 5;
 }
@@ -347,7 +357,7 @@ content {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: var(--subtle-shadow);
 }
 
@@ -417,7 +427,7 @@ content {
 /* device compatibility */
 
 /* small window */
-@media (max-width:1100px) {
+@media (max-width:1200px) {
     .small-logo {
         display: none !important;
     }
@@ -427,7 +437,9 @@ content {
     }
 
     .side-image {
-        max-height: 300px;
+        margin-top: 20px;
+        max-height: 400px;
+        max-width: 760px;
     }
 
     .side-image-container {
@@ -488,8 +500,12 @@ content {
 }
 
 @media (max-width: 780px) {
-    header {
+    .desktop {
         display: none;
+    }
+
+    .mobile {
+        display: flex;
     }
 
     .welcome-wrapper {
@@ -505,10 +521,6 @@ content {
         font-size: 16px;
     }
 
-    footer {
-        display: none;
-    }
-
     .cards {
         padding-bottom: 80px;
     }
@@ -518,7 +530,7 @@ content {
     }
 
     .theme-light .welcome-section {
-        filter: brightness(.25) grayscale(1) drop-shadow(0px 2px 16px rgba(0, 0, 0, .2));
+        filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, .2)) brightness(1.2);
     }
 
     .main-page-logo {
@@ -538,26 +550,63 @@ content {
         padding: 0 !important;
     }
 
-    .mobile {
-        display: flex;
-    }
 
     div#about {
         margin-top: 0;
     }
 
     .paragraph-container {
-        padding: 0 24px !important;
+        padding: 0 !important;
     }
 
     .paragraph {
         font-size: 26px;
         text-align: center !important;
+        padding: 0 20px;
     }
 
     .side-image {
         margin-bottom: 60px;
         border-radius: 0 !important;
+    }
+
+    .section-bottom {
+        padding-bottom: 80px;
+    }
+
+    #mobile-footer {
+        display: block;
+    }
+
+    .lower {
+        text-align: center !important;
+        font-size: 14px;
+    }
+
+    .sig,
+    .baris-inandi {
+        margin: 12px 0 !important;
+    }
+
+    .baris-inandi {
+        font-size: 18px !important;
+
+    }
+
+
+
+
+    .upper {
+        width: fit-content;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #mobile-footer {
+        padding: 40px 0;
+        background: var(--footer-bg);
+        color: var(--secondary-fg) !important;
+        margin-bottom: 0 !important;
     }
 
 }

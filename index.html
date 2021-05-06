@@ -15,7 +15,7 @@
 <body>
     <div id="site-wrapper">
         <div class="header-container noselect">
-            <header>
+            <header class="desktop">
                 <div class="full-width">
                     <nav class="header-font">
                         <img draggable="false" src="./src/logo-small.png" class="small-logo">
@@ -25,11 +25,8 @@
                             <li><a onclick="goToByScroll('contact')">İLETİŞİM</a></li>
                         </ul>
                     </nav>
-
                 </div>
-
             </header>
-
             <div class="welcome-wrapper">
                 <div class="welcome-section ">
                     <logo class="main-page-logo">
@@ -40,7 +37,6 @@
                 </div>
             </div>
         </div>
-
         <main>
             <content>
                 <div class="cards">
@@ -49,10 +45,9 @@
                     </div>
                     <div class="card section" id="about">
                         <div class="section-bottom right-content">
-                            <div class="side-image-container">
-                                <img draggable="false" class="side-image" src="placeholder.png">
+                            <div class="side-image-container desktop">
+                                <img draggable="false" class="side-image" src="./img/img1.jpeg">
                             </div>
-
                             <div class="paragraph-container">
                                 <p class="header-font main-title noselect">BİZ KİMİZ?</p>
                                 <p class="paragraph">
@@ -64,6 +59,11 @@
                                     Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
                                     eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
                                     sed.
+                                </p>
+                                <div class="side-image-container mobile">
+                                    <img draggable="false" class="side-image" src="./img/img1.jpeg">
+                                </div>
+                                <p class="paragraph p2">
                                     Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
                                     Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
                                     est
@@ -80,10 +80,9 @@
                     </div>
                     <div class="card section" id="request">
                         <div class="section-bottom left-content">
-                            <div class="side-image-container">
-                                <img draggable="false" class="side-image" src="placeholder.png">
+                            <div class="side-image-container desktop">
+                                <img draggable="false" class="side-image" src="./img/img2.jpeg">
                             </div>
-
                             <div class="paragraph-container">
                                 <p class="header-font main-title noselect">İSTEYİN, ÜRETELİM</p>
                                 <p class="paragraph">
@@ -95,6 +94,11 @@
                                     Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
                                     eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
                                     sed.
+                                </p>
+                                <div class="side-image-container mobile">
+                                    <img draggable="false" class="side-image" src="./img/img2.jpeg">
+                                </div>
+                                <p class="paragraph p2">
                                     Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
                                     Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
                                     est
@@ -121,7 +125,6 @@
                         </div>
                         <div class="profile-card">
                             <p class="profile-header header-font">Tayfun Erpek</p>
-
                             <div class="profile-details">
                                 <a href="tel:+905325140035" class="phone-number"><i class="fas fa-phone"></i>+90 532 514
                                     0035</a>
@@ -130,11 +133,27 @@
                             </div>
                         </div>
                     </div>
-
-
+                    <div class="card mobile section" id="mobile-footer">
+                        <div class="upper">
+                            <div class="footer-leftmost">
+                                <div class="theme-switch-container">
+                                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
+                                </div>
+                                <div class="lang-select">
+                                    <a class="lang" href="#">TR</a>
+                                    <a class="lang" href="#">ENG</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower">
+                            <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021 |</p> <p class="baris-inandi">
+                                    Websitesi: <a target="_blank" rel="noopener noreferrer"
+                                        href="https://github.com/baris-inandi/">@baris-inandi</a>
+                            </p>
+                        </div>
             </content>
         </main>
-        <footer class="noselect">
+        <footer class="noselect desktop">
             <div class="footer-leftmost">
                 <div class="theme-switch-container">
                     <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
@@ -143,22 +162,14 @@
                     <a class="lang" href="#">TR</a>
                     <a class="lang" href="#">ENG</a>
                 </div>
-
             </div>
-
-
             <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021 | Websitesi: <a target="_blank"
                     rel="noopener noreferrer" href="https://github.com/baris-inandi/">@baris-inandi</a></p>
-
             <img draggable="false" src="./src/icon.png" class="icon">
         </footer>
-
-
     </div>
 </body>
 
 </html>
-
 <script>
-
 </script>
