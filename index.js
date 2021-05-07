@@ -17,7 +17,7 @@ function toggleTheme() {
     }
 })();
 
-function goToByScroll(id) {
+function scrollto(id) {
     $('html,body').animate({
         scrollTop: $("#" + id).offset().top
     }, 'sesx');
