@@ -9,7 +9,7 @@
     --footer-bg: #202124;
     --green-overlay: rgb(37 44 43 / 92%);
     --mobile-overlay: linear-gradient(0deg, rgb(69 80 78 / 92%) 0%, rgb(34 45 39 / 92%) 80%);
-    --contrasting-color: rgba(0, 0, 0, .033);
+    --card-bg-alt: rgba(255, 255, 255, .75);
     --banner-shadow: inset 0px 16px 17px -20px rgb(29, 36, 31);
     --sticky-shadow: 0px 13px 12px -3px rgb(0 0 0 / 7%);
     --card-shadow: 0px 4px 26px -5px #c5c6c7;
@@ -25,7 +25,7 @@
     --footer-bg: #141616;
     --green-overlay: rgb(36 37 42 / 95%);
     --mobile-overlay: linear-gradient(0deg, var(--bg) 0%, rgb(22 38 43 / 90%) 250%);
-    --contrasting-color: rgba(255, 255, 255, .033);
+    --card-bg-alt: rgba(255, 255, 255, .033);
     --banner-shadow: inset 0px 16px 40px -20px rgb(21 19 20 / 100%);
     --sticky-shadow: 0px 13px 12px -3px #1b1b1d;
     --card-shadow: 0px 4px 24px -6px #1b1b1d;
@@ -598,7 +598,7 @@ content {
 }
 
 .contact-card {
-    background: var(--contrasting-color);
+    background: var(--card-bg-alt);
     margin-right: 16px;
     padding: 36px;
     -webkit-border-radius: 8px;
@@ -711,12 +711,12 @@ p#contact-title {
     margin: 0 16px !important;
 }
 
-a.contact-info {
-    text-decoration: none !important;
+.contact-info {
+    margin: 6px;
+    color: var(--accent);
 }
 
 .contact-info-icon:before {
-
     margin-right: 16px;
 }
 
@@ -895,9 +895,30 @@ a.contact-info {
     display: none;
 }
 
+.button-icon {
+    background: var(--accent);
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+            border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    color: var(--bg);
+}
+
+a.button-icon {
+    text-decoration: none;
+    text-align: center !important;
+    line-height: 60px;
+    margin-right: 20px;
+}
+
+.contact-buttons {
+    padding-bottom: 32px;
+}
+
 @media (max-width: 780px) {
     .desktop {
-        display: none;
+        display: none !important;
     }
 
     .mobile {
@@ -984,10 +1005,6 @@ a.contact-info {
         padding-bottom: 80px;
     }
 
-    #mobile-footer {
-        display: block;
-    }
-
     .lower {
         text-align: center !important;
         font-size: 14px;
@@ -1011,10 +1028,12 @@ a.contact-info {
     }
 
     #mobile-footer {
+        display: block;
         padding: 40px 0;
         background: var(--footer-bg);
         color: var(--secondary-fg) !important;
         margin-bottom: 0 !important;
+        margin-top: 60px;
     }
 
     #contact-title-top {
@@ -1051,5 +1070,33 @@ a.contact-info {
 
     .profile-header {
         font-size: 48px;
+    }
+
+    div#contact {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #address {
+        font-size: 24px !important;
+    }
+
+    #hq-card {
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+           -moz-box-shadow: none !important;
+                box-shadow: none !important;
+    }
+
+    p.address-header.header-font {
+        border-bottom: 2px solid var(--fg);
+    }
+
+    .profile-header {
+        margin-bottom: 32px !important;
+    }
+
+    .profile-details {
+        pointer-events: none;
     }
 }
