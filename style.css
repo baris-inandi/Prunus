@@ -892,7 +892,7 @@ p#contact-title {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .button-icon {
@@ -1028,7 +1028,7 @@ a.button-icon {
     }
 
     #mobile-footer {
-        display: block;
+        display: block !important;
         padding: 40px 0;
         background: var(--footer-bg);
         color: var(--secondary-fg) !important;

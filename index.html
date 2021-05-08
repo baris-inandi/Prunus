@@ -20,9 +20,9 @@
                     <nav class="header-font">
                         <img draggable="false" src="./src/logo-small.png" class="small-logo">
                         <ul class="nav">
-                            <li><a onclick="scrollto('about')">BİZ KİMİZ</a></li>
-                            <li><a onclick="scrollto('request')">İSTEYİN ÜRETELİM</a></li>
-                            <li><a onclick="scrollto('contact')">İLETİŞİM</a></li>
+                            <li><a id="nav-about" onclick="scrollto('about')">BİZ KİMİZ</a></li>
+                            <li><a id="nav-request" onclick="scrollto('request')">İSTEYİN ÜRETELİM</a></li>
+                            <li><a id="nav-contact" onclick="scrollto('contact')">İLETİŞİM</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +32,7 @@
                     <logo class="main-page-logo">
                         <img draggable="false" src="./src/logo-large.png" class="large-logo">
                     </logo>
-                    <p class="welcome header-font">PRUNUS'A HOŞGELDİNİZ</p>
+                    <p id="greet" class="welcome header-font">PRUNUS'A HOŞGELDİNİZ</p>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
@@ -49,8 +49,8 @@
                                 <img draggable="false" class="side-image" src="./img/img1.jpeg">
                             </div>
                             <div class="paragraph-container">
-                                <p class="header-font main-title noselect">BİZ KİMİZ?</p>
-                                <p class="paragraph">
+                                <p id="about-title" class="header-font main-title noselect">BİZ KİMİZ?</p>
+                                <p id="about-p1" class="paragraph">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
                                     interdum
                                     a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
@@ -63,7 +63,7 @@
                                 <div class="side-image-container mobile">
                                     <img draggable="false" class="side-image" src="./img/img1.jpeg">
                                 </div>
-                                <p class="paragraph p2">
+                                <p id="about-p2" class="paragraph p2">
                                     Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
                                     Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
                                     est
@@ -84,8 +84,8 @@
                                 <img draggable="false" class="side-image" src="./img/img2.jpeg">
                             </div>
                             <div class="paragraph-container">
-                                <p class="header-font main-title noselect">İSTEYİN, ÜRETELİM</p>
-                                <p class="paragraph">
+                                <p id="request-title" class="header-font main-title noselect">İSTEYİN, ÜRETELİM</p>
+                                <p id="request-p2" class="paragraph">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
                                     interdum
                                     a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
@@ -98,7 +98,7 @@
                                 <div class="side-image-container mobile">
                                     <img draggable="false" class="side-image" src="./img/img2.jpeg">
                                 </div>
-                                <p class="paragraph p2">
+                                <p id="request-p2" class="paragraph p2">
                                     Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
                                     Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
                                     est
@@ -152,14 +152,14 @@
                             <p class="header-font main-title desktop" id="contact-title">İLETİŞİM</p>
                             <div class="contact-card" id="hq-card">
                                 <div>
-                                    <p class="address-header header-font">MERKEZ</p>
+                                    <p id="hq-title" class="address-header header-font">MERKEZ</p>
                                     <p id="address">
                                         Söğütlüçeşme Caddesi <br>
                                         No: 82/402 <br>
                                         Kadıköy 34714 <br>
                                         İstanbul
                                     </p>
-                                    <a href="tel:+905324115961" class="button-icon fas fa-phone"></a>
+                                    <a href="tel:+905324115961" class="mobile button-icon fas fa-phone"></a>
                                     <p class="desktop contact-info phone-number"><i
                                             class="contact-info-icon fas fa-phone"></i>216 338 0536</p>
                                 </div>

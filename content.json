@@ -1,0 +1,34 @@
+{
+	"eng": {
+		"nav-about": "text",
+		"nav-request": "text",
+		"nav-contact": "text",
+		"greet": "text",
+		"about-p1": "text",
+		"about-p2": "text",
+		"request-p1": "text",
+		"request-p2": "text",
+		"address": "text",
+		"about-title": "text",
+		"request-title": "text",
+		"contact-title-top": "text",
+		"contact-title": "text",
+		"hq-title": "text"
+	},
+	"tr": {
+		"nav-about": "text",
+		"nav-request": "text",
+		"nav-contact": "text",
+		"greet": "text",
+		"about-p1": "text",
+		"about-p2": "text",
+		"request-p1": "text",
+		"request-p2": "text",
+		"address": "text",
+		"about-title": "text",
+		"request-title": "text",
+		"contact-title-top": "text",
+		"contact-title": "text",
+		"hq-title": "text"
+	}
+}
