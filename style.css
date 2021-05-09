@@ -500,6 +500,9 @@ content {
     -moz-box-flex: 5;
     -ms-flex: 5;
     flex: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .left-content .paragraph-container {
@@ -892,17 +895,18 @@ p#contact-title {
 }
 
 .mobile {
-    display: none !important;
+    display: none;
 }
 
 .button-icon {
     background: var(--accent);
     -webkit-border-radius: 50%;
-       -moz-border-radius: 50%;
-            border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     height: 60px;
     width: 60px;
     color: var(--bg);
+    display: none !important;
 }
 
 a.button-icon {
@@ -927,6 +931,10 @@ a.button-icon {
         display: -moz-box;
         display: -ms-flexbox;
         display: flex;
+    }
+
+    .button-icon {
+        display: block !important;
     }
 
     .welcome-wrapper {
@@ -1084,8 +1092,8 @@ a.button-icon {
     #hq-card {
         background: transparent !important;
         -webkit-box-shadow: none !important;
-           -moz-box-shadow: none !important;
-                box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
     }
 
     p.address-header.header-font {

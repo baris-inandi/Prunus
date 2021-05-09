@@ -2,10 +2,11 @@
 <html lang="tr">
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="content.js"></script>
     <script src="https://kit.fontawesome.com/9da952c940.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Prunus</title>
@@ -20,9 +21,9 @@
                     <nav class="header-font">
                         <img draggable="false" src="./src/logo-small.png" class="small-logo">
                         <ul class="nav">
-                            <li><a id="nav-about" onclick="scrollto('about')">BİZ KİMİZ</a></li>
-                            <li><a id="nav-request" onclick="scrollto('request')">İSTEYİN ÜRETELİM</a></li>
-                            <li><a id="nav-contact" onclick="scrollto('contact')">İLETİŞİM</a></li>
+                            <li><a id="nav-about" onclick="scrollto('about')"></a></li>
+                            <li><a id="nav-request" onclick="scrollto('request')"></a></li>
+                            <li><a id="nav-contact" onclick="scrollto('contact')"></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -32,7 +33,7 @@
                     <logo class="main-page-logo">
                         <img draggable="false" src="./src/logo-large.png" class="large-logo">
                     </logo>
-                    <p id="greet" class="welcome header-font">PRUNUS'A HOŞGELDİNİZ</p>
+                    <p id="greet" class="welcome header-font"></p>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
@@ -49,32 +50,12 @@
                                 <img draggable="false" class="side-image" src="./img/img1.jpeg">
                             </div>
                             <div class="paragraph-container">
-                                <p id="about-title" class="header-font main-title noselect">BİZ KİMİZ?</p>
-                                <p id="about-p1" class="paragraph">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
-                                    interdum
-                                    a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
-                                    vitae
-                                    nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
-                                    Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
-                                    eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
-                                    sed.
-                                </p>
+                                <p id="about-title" class="header-font main-title noselect"></p>
+                                <p id="about-p1" class="paragraph"></p>
                                 <div class="side-image-container mobile">
                                     <img draggable="false" class="side-image" src="./img/img1.jpeg">
                                 </div>
-                                <p id="about-p2" class="paragraph p2">
-                                    Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
-                                    Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
-                                    est
-                                    sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
-                                    pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit
-                                    viverra.
-                                    Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie.
-                                    Pellentesque
-                                    sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
-                                    vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
-                                </p>
+                                <p id="about-p2" class="paragraph p2"></p>
                             </div>
                         </div>
                     </div>
@@ -84,42 +65,22 @@
                                 <img draggable="false" class="side-image" src="./img/img2.jpeg">
                             </div>
                             <div class="paragraph-container">
-                                <p id="request-title" class="header-font main-title noselect">İSTEYİN, ÜRETELİM</p>
-                                <p id="request-p2" class="paragraph">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tortor sem,
-                                    interdum
-                                    a elit sed, imperdiet ultrices enim. Nam sodales in nunc et gravida. Ut id purus
-                                    vitae
-                                    nulla condimentum maximus ut quis velit. Maecenas auctor vitae tortor et hendrerit.
-                                    Suspendisse ullamcorper pellentesque vestibulum. In at eros est. Integer tincidunt
-                                    eleifend purus. Suspendisse fringilla consectetur leo, non maximus massa maximus
-                                    sed.
-                                </p>
+                                <p id="request-title" class="header-font main-title noselect"></p>
+                                <p id="request-p1" class="paragraph"></p>
                                 <div class="side-image-container mobile">
                                     <img draggable="false" class="side-image" src="./img/img2.jpeg">
                                 </div>
-                                <p id="request-p2" class="paragraph p2">
-                                    Curabitur a lectus eget arcu lacinia posuere pellentesque ut leo.
-                                    Morbi mi nibh, sodales malesuada augue vitae, tincidunt tristique tortor. Curabitur
-                                    est
-                                    sem, bibendum id nulla vitae, interdum rutrum mauris. Nulla porta ligula vitae dolor
-                                    pellentesque, vel aliquam metus ultricies. Morbi feugiat nunc nec orci blandit
-                                    viverra.
-                                    Aliquam dignissim purus id orci iaculis, nec scelerisque massa molestie.
-                                    Pellentesque
-                                    sit amet est vel ipsum aliquet molestie in eget ante. Maecenas sollicitudin, lectus
-                                    vitae tempus semper, ex dui dapibus dui, eu tincidunt nunc nulla a diam.
-                                </p>
+                                <p id="request-p2" class="paragraph p2"></p>
                             </div>
                         </div>
                     </div>
                     <div class="card section" id="contact">
-                        <p class="header-font main-title mobile" id="contact-title-top">İLETİŞİM</p>
+                        <p class="header-font main-title mobile" id="contact-title-top"></p>
                         <div class="contact-left contact-section">
                             <div class="contact-card">
                                 <p class="profile-header header-font">Burak Gürdal</p>
                                 <div class="mobile contact-buttons">
-                                    <a href="tel:+905324115961" class="button-icon fas fa-phone"></a>
+                                    <a href="tel:+905324115961" class="button-icon fas fa-phone-alt"></a>
                                     <a href="mailto:burak.gurdal@prunus.com.tr" class="button-icon fas fa-envelope"></a>
                                 </div>
                                 <div class="profile-details">
@@ -134,7 +95,7 @@
                             <div class="contact-card">
                                 <p class="profile-header header-font">Tayfun Erpek</p>
                                 <div class="mobile contact-buttons">
-                                    <a href="tel:+905324115961" class="button-icon fas fa-phone"></a>
+                                    <a href="tel:+905324115961" class="button-icon fas fa-phone-alt"></a>
                                     <a href="mailto:burak.gurdal@prunus.com.tr" class="button-icon fas fa-envelope"></a>
                                 </div>
                                 <div class="profile-details">
@@ -149,17 +110,12 @@
                             </div>
                         </div>
                         <div class="contact-right contact-section">
-                            <p class="header-font main-title desktop" id="contact-title">İLETİŞİM</p>
+                            <p class="header-font main-title desktop" id="contact-title"></p>
                             <div class="contact-card" id="hq-card">
                                 <div>
-                                    <p id="hq-title" class="address-header header-font">MERKEZ</p>
-                                    <p id="address">
-                                        Söğütlüçeşme Caddesi <br>
-                                        No: 82/402 <br>
-                                        Kadıköy 34714 <br>
-                                        İstanbul
-                                    </p>
-                                    <a href="tel:+905324115961" class="mobile button-icon fas fa-phone"></a>
+                                    <p id="hq-title" class="address-header header-font"></p>
+                                    <p id="address"></p>
+                                    <a href="tel:+905324115961" class="mobile button-icon fas fa-phone-alt"></a>
                                     <p class="desktop contact-info phone-number"><i
                                             class="contact-info-icon fas fa-phone"></i>216 338 0536</p>
                                 </div>
@@ -173,17 +129,13 @@
                                     <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
                                 </div>
                                 <div class="lang-select">
-                                    <a class="lang" href="#">TR</a>
-                                    <a class="lang" href="#">ENG</a>
+                                    <button class="lang" onclick="changeContentLang('tr')">TR</a>
+                                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
                                 </div>
                             </div>
                         </div>
                         <div class="lower">
-                            <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021</p>
-                            <p class="baris-inandi">
-                                Websitesi: <a target="_blank" rel="noopener noreferrer"
-                                    href="https://github.com/baris-inandi/">@baris-inandi</a>
-                            </p>
+                            <p id="footer-text-mobile" class="sig"></p>
                         </div>
             </content>
         </main>
@@ -193,12 +145,11 @@
                     <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
                 </div>
                 <div class="lang-select">
-                    <a class="lang" href="#">TR</a>
-                    <a class="lang" href="#">ENG</a>
+                    <button class="lang" onclick="changeContentLang('tr')">TR</a>
+                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
                 </div>
             </div>
-            <p class="sig"> PRUNUS TARIM YATIRIMLARI SAN. ve TİC. A.Ş, 2021 | Websitesi: <a target="_blank"
-                    rel="noopener noreferrer" href="https://github.com/baris-inandi/">@baris-inandi</a></p>
+            <p id="footer-text" class="sig"></p>
             <img draggable="false" src="./src/icon.png" class="icon">
         </footer>
     </div>
