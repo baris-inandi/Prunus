@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -11,150 +10,145 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Prunus</title>
     <link rel="icon" type="image/png" href="favicon.png">
-</head>
-
-<body>
+  </head>
+  <body>
     <div id="site-wrapper">
-        <div class="header-container noselect" id="header">
-            <header class="desktop">
-                <div class="full-width">
-                    <nav class="header-font">
-                        <img alt="logo" draggable="false" src="./src/logo-small.png" class="small-logo">
-                        <ul class="nav">
-                            <li><a id="nav-about" onclick="scrollto('about')"></a></li>
-                            <li><a id="nav-request" onclick="scrollto('request')"></a></li>
-                            <li><a id="nav-contact" onclick="scrollto('contact')"></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <div class="welcome-wrapper">
-                <div class="welcome-section ">
-                    <div class="main-page-logo">
-                        <img alt="logo" draggable="false" src="./src/logo-large.png" class="large-logo">
-                    </div>
-                    <p id="greet" class="welcome header-font"></p>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
+      <div class="header-container noselect" id="header">
+        <header class="desktop">
+          <div class="full-width">
+            <nav class="header-font">
+              <img alt="logo" draggable="false" src="./src/logo-small.png" class="small-logo">
+              <ul class="nav">
+                <li><a id="nav-about" onclick="scrollto('about')"></a></li>
+                <li><a id="nav-request" onclick="scrollto('request')"></a></li>
+                <li><a id="nav-contact" onclick="scrollto('contact')"></a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <div class="welcome-wrapper">
+          <div class="welcome-section ">
+            <div class="main-page-logo">
+              <img alt="logo" draggable="false" src="./src/logo-large.png" class="large-logo">
             </div>
+            <p id="greet" class="welcome header-font"></p>
+            <i class="fas fa-chevron-down"></i>
+          </div>
         </div>
-        <main>
-            <div id="content">
-                <div class="cards">
-                    <div class="mobile sticky-top">
-                        <img alt="logo" draggable="false" src="./src/sticky.png" class="sticky-logo">
-                    </div>
-                    <div class="card section" id="about">
-                        <div class="section-bottom right-content">
-                            <div class="side-image-container desktop">
-                                <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
-                            </div>
-                            <div class="paragraph-container">
-                                <p id="about-title" class="header-font main-title noselect"></p>
-                                <p id="about-p1" class="paragraph"></p>
-                                <div class="side-image-container mobile">
-                                    <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
-                                </div>
-                                <p id="about-p2" class="paragraph p2"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card section" id="request">
-                        <div class="section-bottom left-content">
-                            <div class="side-image-container desktop">
-                                <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
-                            </div>
-                            <div class="paragraph-container">
-                                <p id="request-title" class="header-font main-title noselect"></p>
-                                <p id="request-p1" class="paragraph"></p>
-                                <div class="side-image-container mobile">
-                                    <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
-                                </div>
-                                <p id="request-p2" class="paragraph p2"></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card section" id="contact">
-                        <p class="header-font main-title mobile" id="contact-title-top"></p>
-                        <div class="contact-left contact-section">
-                            <div class="contact-card">
-                                <p class="profile-header header-font">Burak Gürdal</p>
-                                <div class="mobile contact-buttons">
-                                    <a href="tel:+905324115961" class="button-icon fas fa-phone-alt"></a>
-                                    <a href="mailto:burak.gurdal@prunus.com.tr" class="button-icon fas fa-envelope"></a>
-                                </div>
-                                <div class="profile-details">
-                                    <p class="contact-info phone-number"><i
-                                            class="desktop contact-info-icon fas fa-phone"></i>+90 532
-                                        411 5961</p>
-                                    <p class="contact-info mail-adress"><i
-                                            class="desktop contact-info-icon fas fa-envelope"></i>burak.gurdal@prunus.com.tr
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="contact-card">
-                                <p class="profile-header header-font">Tayfun Erpek</p>
-                                <div class="mobile contact-buttons">
-                                    <a href="tel:+905325140035" class="button-icon fas fa-phone-alt"></a>
-                                    <a href="mailto:tayfun.erpek@prunus.com.tr" class="button-icon fas fa-envelope"></a>
-                                </div>
-                                <div class="profile-details">
-                                    <p class="contact-info phone-number"><i
-                                            class="desktop contact-info-icon fas fa-phone"></i>+90 532
-                                        514
-                                        0035</p>
-                                    <p class="contact-info mail-adress"><i
-                                            class="desktop contact-info-icon fas fa-envelope"></i>tayfun.erpek@prunus.com.tr
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact-right contact-section">
-                            <p class="header-font main-title desktop" id="contact-title"></p>
-                            <div class="contact-card" id="hq-card">
-                                <div>
-                                    <p id="hq-title" class="address-header header-font"></p>
-                                    <p id="address"></p>
-                                    <a href="tel:+905324115961" class="mobile button-icon fas fa-phone-alt hq-call"></a>
-                                    <p class="contact-info phone-number"><i
-                                            class="desktop contact-info-icon fas fa-phone"></i>+90 216 338 0536</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mobile section" id="mobile-footer">
-                        <div class="upper">
-                            <div class="footer-leftmost">
-                                <div class="theme-switch-container">
-                                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
-                                </div>
-                                <div class="lang-select">
-                                    <button class="lang" onclick="changeContentLang('tr')">TR</button>
-                                    <button class="lang" onclick="changeContentLang('en')">ENG</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lower">
-                            <p id="footer-text-mobile" class="sig"></p>
-                        </div>
-                    </div>
-                </div>
+      </div>
+      <main>
+        <div id="content">
+          <div class="cards">
+            <div class="mobile sticky-top">
+              <img alt="logo" draggable="false" src="./src/sticky.png" class="sticky-logo">
             </div>
-        </main>
+            <div class="card section" id="about">
+              <div class="section-bottom right-content">
+                <div class="side-image-container desktop">
+                  <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
+                </div>
+                <div class="paragraph-container">
+                  <p id="about-title" class="header-font main-title noselect"></p>
+                  <p id="about-p1" class="paragraph"></p>
+                  <div class="side-image-container mobile">
+                    <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
+                  </div>
+                  <p id="about-p2" class="paragraph p2"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card section" id="request">
+              <div class="section-bottom left-content">
+                <div class="side-image-container desktop">
+                  <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
+                </div>
+                <div class="paragraph-container">
+                  <p id="request-title" class="header-font main-title noselect"></p>
+                  <p id="request-p1" class="paragraph"></p>
+                  <div class="side-image-container mobile">
+                    <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
+                  </div>
+                  <p id="request-p2" class="paragraph p2"></p>
+                </div>
+              </div>
+            </div>
+            <div class="card section" id="contact">
+              <p class="header-font main-title mobile" id="contact-title-top"></p>
+              <div class="contact-left contact-section">
+                <div class="contact-card">
+                  <p class="profile-header header-font">Burak Gürdal</p>
+                  <div class="mobile contact-buttons">
+                    <a href="tel:+905324115961" class="button-icon fas fa-phone-alt"></a>
+                    <a href="mailto:burak.gurdal@prunus.com.tr" class="button-icon fas fa-envelope"></a>
+                  </div>
+                  <div class="profile-details">
+                    <p class="contact-info phone-number"><i
+                      class="desktop contact-info-icon fas fa-phone"></i>+90 532 411 5961</p>
+                    <p class="contact-info mail-adress"><i
+                      class="desktop contact-info-icon fas fa-envelope"></i>burak.gurdal@prunus.com.tr
+                    </p>
+                  </div>
+                </div>
+                <div class="contact-card">
+                  <p class="profile-header header-font">Tayfun Erpek</p>
+                  <div class="mobile contact-buttons">
+                    <a href="tel:+905325140035" class="button-icon fas fa-phone-alt"></a>
+                    <a href="mailto:tayfun.erpek@prunus.com.tr" class="button-icon fas fa-envelope"></a>
+                  </div>
+                  <div class="profile-details">
+                    <p class="contact-info phone-number"><i
+                      class="desktop contact-info-icon fas fa-phone"></i>+90 532 514 0035</p>
+                    <p class="contact-info mail-adress"><i
+                      class="desktop contact-info-icon fas fa-envelope"></i>tayfun.erpek@prunus.com.tr
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-right contact-section">
+                <p class="header-font main-title desktop" id="contact-title"></p>
+                <div class="contact-card" id="hq-card">
+                  <div>
+                    <p id="hq-title" class="address-header header-font"></p>
+                    <p id="address"></p>
+                    <a href="tel:+905324115961" class="mobile button-icon fas fa-phone-alt hq-call"></a>
+                    <p class="contact-info phone-number"><i
+                      class="desktop contact-info-icon fas fa-phone"></i>+90 216 338 0536</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mobile section" id="mobile-footer">
+              <div class="upper">
+                <div class="footer-leftmost">
+                  <div class="theme-switch-container">
+                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
+                  </div>
+                  <div class="lang-select">
+                    <button class="lang" onclick="changeContentLang('tr')">TR</button>
+                    <button class="lang" onclick="changeContentLang('en')">ENG</button>
+                  </div>
+                </div>
+              </div>
+              <div class="lower">
+                <p id="footer-text-mobile" class="sig"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
     <footer class="noselect desktop">
-        <div class="footer-leftmost">
-            <div class="theme-switch-container">
-                <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
-            </div>
-            <div class="lang-select">
-                <button class="lang" onclick="changeContentLang('tr')">TR</button>
-                <button class="lang" onclick="changeContentLang('en')">ENG</button>
-            </div>
+      <div class="footer-leftmost">
+        <div class="theme-switch-container">
+          <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
         </div>
-        <p id="footer-text" class="sig"></p>
-        <img alt="logo" draggable="false" src="./src/icon.png" class="icon">
+        <div class="lang-select">
+          <button class="lang" onclick="changeContentLang('tr')">TR</button>
+          <button class="lang" onclick="changeContentLang('en')">ENG</button>
+        </div>
+      </div>
+      <p id="footer-text" class="sig"></p>
+      <img alt="logo" draggable="false" src="./src/icon.png" class="icon">
     </footer>
-</body>
-
+  </body>
 </html>
