@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="content.js"></script>
+    <script src="index.js"></script>
+    <script src="content.js"></script>
     <script src="https://kit.fontawesome.com/9da952c940.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Prunus</title>
@@ -19,7 +19,7 @@
             <header class="desktop">
                 <div class="full-width">
                     <nav class="header-font">
-                        <img draggable="false" src="./src/logo-small.png" class="small-logo">
+                        <img alt="logo" draggable="false" src="./src/logo-small.png" class="small-logo">
                         <ul class="nav">
                             <li><a id="nav-about" onclick="scrollto('about')"></a></li>
                             <li><a id="nav-request" onclick="scrollto('request')"></a></li>
@@ -30,31 +30,30 @@
             </header>
             <div class="welcome-wrapper">
                 <div class="welcome-section ">
-                    <logo class="main-page-logo">
-                        <img draggable="false" src="./src/logo-large.png" class="large-logo">
-                    </logo>
+                    <div class="main-page-logo">
+                        <img alt="logo" draggable="false" src="./src/logo-large.png" class="large-logo">
+                    </div>
                     <p id="greet" class="welcome header-font"></p>
                     <i class="fas fa-chevron-down"></i>
                 </div>
             </div>
         </div>
         <main>
-            <content>
+            <div id="content">
                 <div class="cards">
                     <div class="mobile sticky-top">
-                        <img draggable="false" src="./src/sticky.png" class="sticky-logo">
+                        <img alt="logo" draggable="false" src="./src/sticky.png" class="sticky-logo">
                     </div>
                     <div class="card section" id="about">
                         <div class="section-bottom right-content">
                             <div class="side-image-container desktop">
-                                <img draggable="false" class="side-image"
-                                    src="./img/img1.jpeg">
+                                <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
                             </div>
                             <div class="paragraph-container">
                                 <p id="about-title" class="header-font main-title noselect"></p>
                                 <p id="about-p1" class="paragraph"></p>
                                 <div class="side-image-container mobile">
-                                    <img draggable="false" class="side-image" src="./img/img1.jpeg">
+                                    <img alt="image-1" draggable="false" class="side-image" src="./img/img1.jpeg">
                                 </div>
                                 <p id="about-p2" class="paragraph p2"></p>
                             </div>
@@ -63,13 +62,13 @@
                     <div class="card section" id="request">
                         <div class="section-bottom left-content">
                             <div class="side-image-container desktop">
-                                <img draggable="false" class="side-image" src="./img/img2.jpeg">
+                                <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
                             </div>
                             <div class="paragraph-container">
                                 <p id="request-title" class="header-font main-title noselect"></p>
                                 <p id="request-p1" class="paragraph"></p>
                                 <div class="side-image-container mobile">
-                                    <img draggable="false" class="side-image" src="./img/img2.jpeg">
+                                    <img alt="image-2" draggable="false" class="side-image" src="./img/img2.jpeg">
                                 </div>
                                 <p id="request-p2" class="paragraph p2"></p>
                             </div>
@@ -127,35 +126,35 @@
                         <div class="upper">
                             <div class="footer-leftmost">
                                 <div class="theme-switch-container">
-                                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
+                                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
                                 </div>
                                 <div class="lang-select">
-                                    <button class="lang" onclick="changeContentLang('tr')">TR</a>
-                                        <button class="lang" onclick="changeContentLang('en')">ENG</a>
+                                    <button class="lang" onclick="changeContentLang('tr')">TR</button>
+                                    <button class="lang" onclick="changeContentLang('en')">ENG</button>
                                 </div>
                             </div>
                         </div>
                         <div class="lower">
                             <p id="footer-text-mobile" class="sig"></p>
                         </div>
-            </content>
+                    </div>
+                </div>
+            </div>
         </main>
     </div>
     <footer class="noselect desktop">
         <div class="footer-leftmost">
             <div class="theme-switch-container">
-                <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
+                <a onclick="toggleTheme()" class="fas fa-adjust theme-switch theme-icon"></a>
             </div>
             <div class="lang-select">
-                <button class="lang" onclick="changeContentLang('tr')">TR</a>
-                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
+                <button class="lang" onclick="changeContentLang('tr')">TR</button>
+                <button class="lang" onclick="changeContentLang('en')">ENG</button>
             </div>
         </div>
         <p id="footer-text" class="sig"></p>
-        <img draggable="false" src="./src/icon.png" class="icon">
+        <img alt="logo" draggable="false" src="./src/icon.png" class="icon">
     </footer>
 </body>
 
 </html>
-<script>
-</script>
