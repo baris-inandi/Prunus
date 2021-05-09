@@ -39,6 +39,8 @@
     min-height: 100vh;
     height: 100vh;
     top: 0;
+    opacity: 0;
+    transition: .33s ease;
 }
 
 html {
@@ -738,6 +740,16 @@ p#contact-title {
 }
 
 /*animations*/
+@keyframes site-in{
+    from {opacity:0; transform: translateY(160px) scaleY(.8);}
+    to {opacity: 1; transform: none !important;}
+}
+
+.load{
+    opacity: 1 !important;
+    animation: .45s site-in;
+}
+
 /* device compatibility */
 /* small window */
 @media (max-width:1200px) {

@@ -15,7 +15,7 @@
 
 <body>
     <div id="site-wrapper">
-        <div class="header-container noselect">
+        <div class="header-container noselect" id="header">
             <header class="desktop">
                 <div class="full-width">
                     <nav class="header-font">
@@ -47,7 +47,8 @@
                     <div class="card section" id="about">
                         <div class="section-bottom right-content">
                             <div class="side-image-container desktop">
-                                <img draggable="false" class="side-image" src="./img/img1.jpeg">
+                                <img draggable="false" class="side-image"
+                                    src="./img/img1.jpeg">
                             </div>
                             <div class="paragraph-container">
                                 <p id="about-title" class="header-font main-title noselect"></p>
@@ -130,7 +131,7 @@
                                 </div>
                                 <div class="lang-select">
                                     <button class="lang" onclick="changeContentLang('tr')">TR</a>
-                                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
+                                        <button class="lang" onclick="changeContentLang('en')">ENG</a>
                                 </div>
                             </div>
                         </div>
@@ -139,20 +140,20 @@
                         </div>
             </content>
         </main>
-        <footer class="noselect desktop">
-            <div class="footer-leftmost">
-                <div class="theme-switch-container">
-                    <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
-                </div>
-                <div class="lang-select">
-                    <button class="lang" onclick="changeContentLang('tr')">TR</a>
-                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
-                </div>
-            </div>
-            <p id="footer-text" class="sig"></p>
-            <img draggable="false" src="./src/icon.png" class="icon">
-        </footer>
     </div>
+    <footer class="noselect desktop">
+        <div class="footer-leftmost">
+            <div class="theme-switch-container">
+                <a onclick="toggleTheme()" class="fas fa-adjust theme-switch" id="theme-icon"></a>
+            </div>
+            <div class="lang-select">
+                <button class="lang" onclick="changeContentLang('tr')">TR</a>
+                    <button class="lang" onclick="changeContentLang('en')">ENG</a>
+            </div>
+        </div>
+        <p id="footer-text" class="sig"></p>
+        <img draggable="false" src="./src/icon.png" class="icon">
+    </footer>
 </body>
 
 </html>

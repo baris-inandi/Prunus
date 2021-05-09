@@ -85,13 +85,17 @@ function changeContentLang(lang) {
         document.getElementById(String(currentID)).innerHTML = (jsonObj[lang][String(currentID)]);
     }
     localStorage.setItem('lang', lang);
+
 }
 
 window.addEventListener('load', (event) => {
     if (localStorage.getItem('lang') === 'en') {
         changeContentLang("en", ids, jsonObj);
-    } else {
+    } else {    
         localStorage.setItem('lang', "tr");
         changeContentLang("tr", ids, jsonObj);
     }
+    setTimeout(function(){ window.scrollTo(0, 0) }, 10);
+    document.getElementById("site-wrapper").classList.add("load");
+    
 });
