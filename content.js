@@ -12,7 +12,7 @@ var jsonObj = JSON.parse(`
 		"address": "\
         Söğütlüçeşme Caddesi<br>\
         No: 82/402<br>\
-        Kadıköy 34714,<br>\
+        Kadıköy 34714<br>\
         İstanbul",
 		"about-title": "BİZ KİMİZ?",
 		"request-title": "İSTEYİN, ÜRETELİM",
@@ -41,7 +41,7 @@ var jsonObj = JSON.parse(`
 		"address": "\
         Söğütlüçeşme Street<br>\
         No: 82/402<br>\
-        Kadıköy 34714,<br>\
+        Kadıköy 34714<br>\
         Istanbul",
 		"about-title": "ABOUT US",
 		"request-title": "YOU REQUEST, WE PRODUCE",
