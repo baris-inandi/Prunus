@@ -205,19 +205,11 @@ p.sig {
     font-size: 20px;
 }
 
-i.fas.fa-chevron-down {
-    width: 100%;
+.fas.fa-chevron-down {
     height: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    background: transparent;
+    border: none;
+    margin: 0 auto;
 }
 
 .theme-icon {
@@ -1209,5 +1201,9 @@ a.button-icon {
 
     body {
         overflow-x: auto !important;
+    }
+
+    .welcome-section {
+        margin-top: -10%;
     }
 }
